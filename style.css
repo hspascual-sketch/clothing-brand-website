@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.btn {
+    background: orange;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#menuToggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+        flex-direction: column;
+    }
+    #menuToggle {
+        display: block;
+        background: orange;
+        padding: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+}
